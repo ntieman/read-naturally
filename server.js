@@ -166,6 +166,6 @@ app.get('*', (req,res) =>{
 
 connection.connect();
 
-app.listen(process.env.SERVER_PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log('API server started.');
 });
