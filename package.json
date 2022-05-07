@@ -9,7 +9,7 @@
   "scripts": {
     "start": "webpack serve --config ./webpack.config.js --mode development",
     "server": "node -r dotenv/config server.js",
-    "build": "webpack && npm run --prefix=mobile build-web",
+    "build": "webpack",
     "lint": "eslint src/**/*.js src/**/*.jsx"
   },
   "author": "",
@@ -42,6 +42,8 @@
     "css-loader": "^6.7.1",
     "eslint": "^8.14.0",
     "eslint-plugin-react": "^7.29.4",
+    "expo": "^45.0.1",
+    "expo-cli": "^5.4.3",
     "file-loader": "^6.2.0",
     "sass": "^1.51.0",
     "sass-loader": "^12.6.0",

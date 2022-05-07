@@ -1,0 +1,2 @@
+(this.webpackJsonp=this.webpackJsonp||[]).push([[0],{26:function(r,e,n){"use strict";n.d(e,"a",(function(){return u}));n(73);var t=n(6),o=n(48),c=n(20);function u(){return Object(c.jsx)(o.a,{style:{marginTop:"10%"},source:{uri:"http://192.168.1.68:3000"},renderError:function(){return alert("Could not render view.","Render Error")}})}t.a.create({container:{flex:1,backgroundColor:"#fff",alignItems:"center",justifyContent:"center"}})},49:function(r,e,n){r.exports=n(72)}},[[49,1,2]]]);
+//# sourceMappingURL=app.9ccf3ab2.chunk.js.map
