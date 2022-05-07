@@ -9,7 +9,7 @@
   "scripts": {
     "start": "webpack serve --config ./webpack.config.js --mode development",
     "server": "node -r dotenv/config server.js",
-    "build": "webpack",
+    "build": "webpack && npm run --prefix=mobile build-web",
     "lint": "eslint src/**/*.js src/**/*.jsx"
   },
   "author": "",
