@@ -7,7 +7,7 @@ export default function App() {
     <WebView
       style={{ marginTop: '10%' }}
       source={{
-        uri: 'http://192.168.1.68:3000'
+        uri: 'https://infinite-shore-03982.herokuapp.com/'
       }}
       renderError={() => alert('Could not render view.', 'Render Error')}
     />

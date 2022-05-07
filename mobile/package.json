@@ -11,8 +11,6 @@
     "build-web": "expo build:web"
   },
   "dependencies": {
-    "expo": "~44.0.0",
-    "expo-cli": "^5.4.3",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -21,7 +19,9 @@
     "react-native-webview": "11.15.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "expo": "^45.0.1",
+    "expo-cli": "^5.4.3"
   },
   "private": true
 }
