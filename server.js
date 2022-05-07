@@ -9,7 +9,11 @@ const connection = mysql.createConnection({
   user: process.env.DATABASE_USER,
   password: process.env.DATABASE_PASSWORD,
   database: process.env.DATABASE_NAME
-})
+});
+
+connection.connect(function() {
+  connection.query('CREATE TABLE IF NOT EXISTS students (id INTEGER AUTO_INCREMENT PRIMARY KEY, first_name VARCHAR(255) NOT NULL, last_name VARCHAR(255) NOT NULL, school_name VARCHAR(255) NOT NULL, username VARCHAR(255) NOT NULL, licensed TINYINT');
+});
 
 const app = express();
 const jsonParser = bodyParser.json();
