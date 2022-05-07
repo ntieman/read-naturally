@@ -124,7 +124,7 @@ const Students = () => {
 
   const loadStudents = () => {
     axios
-      .get(process.env.API_URL + '/students').then(response => {
+      .get('/api/students').then(response => {
         for(let i = 0; i < response.data.length; i++) {
           response.data[i].selected = false;
         }
@@ -151,7 +151,7 @@ const Students = () => {
     const row = e.node;
 
     axios
-      .post(`${process.env.API_URL}/students/${id}/update`, {
+      .post(`/api/students/${id}/update`, {
         [field]: newValue
       })
       .then(response => {
@@ -172,7 +172,7 @@ const Students = () => {
 
     selectedRows.forEach(function(row) {
       axios
-        .delete(process.env.API_URL + '/students/' + row.data.id + '/delete')
+        .delete('/api/students/' + row.data.id + '/delete')
         .then(() => {
           gridAPI.applyTransaction({
             remove: [row.data]

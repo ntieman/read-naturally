@@ -84,7 +84,7 @@ const AddStudent = () => {
     values.licensed = values.licensed ? 1 : 0;
 
     return axios
-      .post(`${process.env.API_URL}/students/add`, values)
+      .post(`/api/students/add`, values)
       .then(() => {
         navigate('/students', { replace: true });
       })
