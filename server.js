@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
 });
 
 connection.connect(function() {
-  connection.query('CREATE TABLE IF NOT EXISTS students (id INTEGER AUTO_INCREMENT PRIMARY KEY, first_name VARCHAR(255) NOT NULL, last_name VARCHAR(255) NOT NULL, school_name VARCHAR(255) NOT NULL, username VARCHAR(255) NOT NULL, licensed TINYINT');
+  connection.query('CREATE TABLE IF NOT EXISTS students (id INTEGER AUTO_INCREMENT PRIMARY KEY, first_name VARCHAR(255) NOT NULL, last_name VARCHAR(255) NOT NULL, school_name VARCHAR(255) NOT NULL, username VARCHAR(255) NOT NULL, licensed TINYINT);');
 });
 
 const app = express();
